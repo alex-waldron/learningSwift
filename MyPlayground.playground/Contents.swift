@@ -1,8 +1,10 @@
 
-struct Town{
-    let name = "AlexLand"
-    var citizens = ["Alex", "Gab"]
-    var resources = ["Grain": 100, "Ore": 42, "Wool":75]
-}
+import UIKit
 
-var myTown = Town()
+var array = [1,3,43,3,2,4]
+func addOne(n1:Int) -> Int
+{
+    return n1 + 1
+}
+let arrayString = array.map{"\($0)"}
+print(arrayString)
