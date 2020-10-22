@@ -2,6 +2,11 @@ protocol CanFly {
     func fly()
 }
 
+extension CanFly {
+    func fly(){
+        print("the objext goes up")
+    }
+}
 
 class Bird{
     var isFemale = true
@@ -38,10 +43,7 @@ struct FlyingMuseum{
 }
 
 struct Airplane: CanFly{
-    func fly() {
-        print("The airplane flies")
-    }
-    
+
 
 }
 
@@ -57,3 +59,6 @@ myPenguin.swim()
 
 let museum = FlyingMuseum()
 museum.flyingDemo(flyingObject: myEagle)
+
+let myPlane = Airplane()
+myPlane.fly()
