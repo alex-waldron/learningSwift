@@ -1,10 +1,13 @@
+import Foundation
 
-import UIKit
-
-var array = [1,3,43,3,2,4]
-func addOne(n1:Int) -> Int
-{
-    return n1 + 1
+let currentDate = Date()
+print(currentDate)
+for i in 1...100000{
+    print(i)
 }
-let arrayString = array.map{"\($0)"}
-print(arrayString)
+
+let newDate = Date()
+
+let timeInterval = NSDateInterval(start: currentDate, end: newDate)
+print(timeInterval.duration)
+
