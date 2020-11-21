@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,11 +21,20 @@
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZLL-NF-QY9">
                         <rect key="frame" x="10" y="10" width="427" height="66"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="uJ6-aR-k35">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0qk-Ii-0lx"/>
+                                    <constraint firstAttribute="width" constant="40" id="5DJ-C9-uqi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="ICv-QY-FBe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="OZO-Xw-481"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyb-aW-V0o">
-                                <rect key="frame" x="0.0" y="0.0" width="367" height="50"/>
+                                <rect key="frame" x="60" y="0.0" width="307" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pj7-PQ-zdb">
-                                        <rect key="frame" x="10" y="10" width="347" height="30"/>
+                                        <rect key="frame" x="10" y="10" width="287" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="BrandLightPurple"/>
                                         <nil key="highlightedColor"/>
@@ -39,13 +48,13 @@
                                     <constraint firstAttribute="trailing" secondItem="pj7-PQ-zdb" secondAttribute="trailing" constant="10" id="lL8-QF-57J"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="uJ6-aR-k35">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="AsT-yM-YC9">
                                 <rect key="frame" x="387" y="0.0" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="0qk-Ii-0lx"/>
-                                    <constraint firstAttribute="width" constant="40" id="5DJ-C9-uqi"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="ICv-QY-FBe"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="OZO-Xw-481"/>
+                                    <constraint firstAttribute="width" constant="40" id="0Xa-Uv-Eu3"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="9oB-WN-4MC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="aQq-RU-sr7"/>
+                                    <constraint firstAttribute="height" constant="40" id="fyI-13-VFH"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -61,6 +70,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="label" destination="pj7-PQ-zdb" id="TxU-rf-tOS"/>
+                <outlet property="leftImageView" destination="uJ6-aR-k35" id="IHd-I0-OnY"/>
                 <outlet property="messageBubble" destination="lyb-aW-V0o" id="Lao-Vv-KTA"/>
                 <outlet property="rightImageView" destination="uJ6-aR-k35" id="vhy-ua-1aF"/>
             </connections>
@@ -69,6 +79,7 @@
     </objects>
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
+        <image name="YouAvatar" width="36" height="36"/>
         <namedColor name="BrandLightPurple">
             <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
