@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  I Am Rich
+//  i Am Rich
 //
-//  Created by Alex Waldron on 10/12/20.
+//  Created by Alex Waldron on 11/21/20.
 //
 
 import UIKit
